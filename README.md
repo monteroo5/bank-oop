@@ -57,10 +57,10 @@ Tendrá un método run() que realice los siguiente:
        - Si existe se modifica el saldo, añadiendo la cantidad. 
        - Se muestra la cuenta
   5. Sacar diner de una cuenta
-    - Se pide un IBAN
-    - Se pide una cantidad de dinero
-    - Se busca la cuenta con el IBAN.
-        - Si no existe se muestra el mensaje "No existe la cuenta"
-        - Si hay suficiente saldo, se reduce el saldo. Si no hay suficiente saldo se muestra "Saldo insuficiente"
-        - Se muestra la cuenta
+     - Se pide un IBAN
+     - Se pide una cantidad de dinero
+     - Se busca la cuenta con el IBAN.
+         - Si no existe se muestra el mensaje "No existe la cuenta"
+         - Si hay suficiente saldo, se reduce el saldo. Si no hay suficiente saldo se muestra "Saldo insuficiente"
+         - Se muestra la cuenta
 
