@@ -44,6 +44,19 @@ public class Bank {
         }
     }
 
+    public void withdraw(String iban, double amount) {
+        var account = findAccount(iban);
+        if (account != null) {
+            if (account.getBalance() >= amount) {
+                account.deposit(-amount);
+            } else {
+                System.out.println("No hay suficiente saldo");
+            }
+        } else {
+            System.out.println("Cuenta no encontrada");
+        }
+    }
+
     public Account findAccount(String iban) {
         for (var account : accounts) {
             if (account.getIban().equals(iban)) {
